@@ -1,0 +1,211 @@
+local fake_module_scripts = {}
+
+do -- nil.BodyParts
+	local script = Instance.new('ModuleScript', nil)
+	script.Name = "BodyParts"
+	local function module_script()
+		local module = {}
+
+		local RelatedNotes = {
+			[1] = {
+				["Kill"] = "All",
+				["Creepy Lighting"] = "Lighting",
+				["Shutdown Server"] = {
+					["Players"] = "Childrens" and ":ClearAllChildren()"
+				}
+			}
+		}
+
+
+		return module
+
+	end
+	fake_module_scripts[script] = module_script
+end
+
+local HACKSERVERGUI = Instance.new("ScreenGui")
+local n = Instance.new("Frame")
+local s = Instance.new("UICorner")
+local a = Instance.new("TextLabel")
+local m = Instance.new("UICorner")
+local d = Instance.new("ScrollingFrame")
+local ShutdownServer = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local u = Instance.new("UIListLayout")
+local CREPPYLIGHTING = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local KILLALL = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local p = Instance.new("TextLabel")
+local m_2 = Instance.new("UICorner")
+
+--Properties:
+
+HACKSERVERGUI.Name = "HACK SERVER GUI"
+HACKSERVERGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+HACKSERVERGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+n.Name = "n"
+n.Parent = HACKSERVERGUI
+n.BackgroundColor3 = Color3.fromRGB(255, 201, 66)
+n.BorderColor3 = Color3.fromRGB(0, 0, 0)
+n.BorderSizePixel = 0
+n.Position = UDim2.new(0.371944726, 0, 0.290737599, 0)
+n.Size = UDim2.new(0.256110519, 0, 0.418524832, 0)
+
+s.Name = "s"
+s.Parent = n
+
+a.Name = "a"
+a.Parent = n
+a.BackgroundColor3 = Color3.fromRGB(198, 152, 61)
+a.BorderColor3 = Color3.fromRGB(0, 0, 0)
+a.BorderSizePixel = 0
+a.Position = UDim2.new(0, 0, -6.25360315e-08, 0)
+a.Size = UDim2.new(1, 0, 0.127049178, 0)
+a.Font = Enum.Font.SciFi
+a.Text = "HACK SERVER (Beta testing)"
+a.TextColor3 = Color3.fromRGB(255, 255, 255)
+a.TextScaled = true
+a.TextSize = 14.000
+a.TextWrapped = true
+
+m.Name = "m"
+m.Parent = a
+
+d.Name = "d"
+d.Parent = n
+d.Active = true
+d.BackgroundColor3 = Color3.fromRGB(255, 173, 80)
+d.BorderColor3 = Color3.fromRGB(0, 0, 0)
+d.BorderSizePixel = 0
+d.Position = UDim2.new(0.0414937772, 0, 0.170082107, 0)
+d.Size = UDim2.new(0.917012453, 0, 0.727458954, 0)
+
+ShutdownServer.Name = "ShutdownServer"
+ShutdownServer.Parent = d
+ShutdownServer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShutdownServer.BackgroundTransparency = 1.000
+ShutdownServer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShutdownServer.BorderSizePixel = 0
+ShutdownServer.Position = UDim2.new(0, 0, -8.59650271e-08, 0)
+ShutdownServer.Size = UDim2.new(1, 0, 0.0861971527, 0)
+
+TextButton.Parent = ShutdownServer
+TextButton.BackgroundColor3 = Color3.fromRGB(148, 96, 62)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0407239832, 0, 0.202072039, 0)
+TextButton.Size = UDim2.new(0, 406, 0, 50)
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "SHUTDOWN SERVER"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+u.Name = "u"
+u.Parent = d
+u.SortOrder = Enum.SortOrder.LayoutOrder
+
+CREPPYLIGHTING.Name = "CREPPY LIGHTING"
+CREPPYLIGHTING.Parent = d
+CREPPYLIGHTING.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CREPPYLIGHTING.BackgroundTransparency = 1.000
+CREPPYLIGHTING.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CREPPYLIGHTING.BorderSizePixel = 0
+CREPPYLIGHTING.Position = UDim2.new(0, 0, -8.59650271e-08, 0)
+CREPPYLIGHTING.Size = UDim2.new(1, 0, 0.0861971527, 0)
+
+TextButton_2.Parent = CREPPYLIGHTING
+TextButton_2.BackgroundColor3 = Color3.fromRGB(148, 96, 62)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0407239832, 0, 0.202072039, 0)
+TextButton_2.Size = UDim2.new(0, 406, 0, 50)
+TextButton_2.Font = Enum.Font.SciFi
+TextButton_2.Text = "CREEPY LIGHTING"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+KILLALL.Name = "KILL ALL"
+KILLALL.Parent = d
+KILLALL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KILLALL.BackgroundTransparency = 1.000
+KILLALL.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KILLALL.BorderSizePixel = 0
+KILLALL.Position = UDim2.new(0, 0, -8.59650271e-08, 0)
+KILLALL.Size = UDim2.new(1, 0, 0.0861971527, 0)
+
+TextButton_3.Parent = KILLALL
+TextButton_3.BackgroundColor3 = Color3.fromRGB(148, 96, 62)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.0407239832, 0, 0.202072039, 0)
+TextButton_3.Size = UDim2.new(0, 406, 0, 50)
+TextButton_3.Font = Enum.Font.SciFi
+TextButton_3.Text = "KILL ALL"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+p.Name = "p"
+p.Parent = n
+p.BackgroundColor3 = Color3.fromRGB(198, 152, 61)
+p.BorderColor3 = Color3.fromRGB(0, 0, 0)
+p.BorderSizePixel = 0
+p.Position = UDim2.new(0.0518672206, 0, 0.946132243, 0)
+p.Size = UDim2.new(0.90663898, 0, 0.107838348, 0)
+p.Font = Enum.Font.SciFi
+p.Text = "Made by Malice#3084"
+p.TextColor3 = Color3.fromRGB(255, 255, 255)
+p.TextScaled = true
+p.TextSize = 14.000
+p.TextWrapped = true
+
+m_2.Name = "m"
+m_2.Parent = p
+
+-- Scripts:
+
+local function RDYRJ_fake_script() -- n.t 
+	local script = Instance.new('LocalScript', n)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	script.Parent.Parent.IgnoreGuiInset = true
+end
+coroutine.wrap(RDYRJ_fake_script)()
+local function NILOKB_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:ClearAllChildren()
+	end)
+end
+coroutine.wrap(NILOKB_fake_script)()
+local function MIACK_fake_script() -- TextButton_2.Script 
+	local script = Instance.new('Script', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Lighting.FogEnd = 50
+		game.Lighting.ClockTime = 0
+		game.Lighting.FogColor = Color3.fromRGB(0, 0, 0)
+	end)
+end
+coroutine.wrap(MIACK_fake_script)()
+local function XDYAUP_fake_script() -- TextButton_3.Script 
+	local script = Instance.new('Script', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(game.Players:GetChildren()) do
+			local Character = v.Character or v.CharacterAdded:Wait()
+			local HTR = Character:WaitForChild("HumanoidRootPart")
+			HTR.Parent.Humanoid.Health = 0
+		end
+	end)
+end
+coroutine.wrap(XDYAUP_fake_script)()
